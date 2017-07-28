@@ -3,73 +3,43 @@
 <head>
 	<meta charset="utf-8">
 	<title>NYT Search</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script type="text/javascript" src="nytsearch.js"></script>
 </head>
 <body>
 	<div class="container">
-	<h1>NYT Search</h1>
-	<div class="row" id=searchParamater>
-        <div class="col-md-6">
-    		<h2>Search Term</h2>
-            <div class="custom-search-input">
-                <div class="input-group col-md-12">
-                    <input type="text" class="form-control input-lg" placeholder="search term" />
-                    <span class="input-group-btn">
-                        <button class="btn btn-info btn-lg" type="button">
-                            <i class="glyphicon glyphicon-search"></i>
-                        </button>
-                    </span>
-                </div>
-            </div>
-        </div>
-	</div>
-	<div class="row" id=searchParamater>
-        <div class="col-md-6">
-    		<h2>Number of Records to Retrieve</h2>
-            <div class="custom-search-input">
-                <div class="input-group col-md-12">
-                    <input type="text" class="form-control input-lg" placeholder="search term" />
-                    <span class="input-group-btn">
-                        <button class="btn btn-info btn-lg" type="button">
-                            <i class="glyphicon glyphicon-search"></i>
-                        </button>
-                    </span>
-                </div>
-            </div>
-        </div>
-	</div>
-	<div class="row" id=searchParamater>
-        <div class="col-md-6">
-    		<h2>Start Year</h2>
-            <div class="custom-search-input">
-                <div class="input-group col-md-12">
-                    <input type="text" class="form-control input-lg" placeholder="search term" />
-                    <span class="input-group-btn">
-                        <button class="btn btn-info btn-lg" type="button">
-                            <i class="glyphicon glyphicon-search"></i>
-                        </button>
-                    </span>
-                </div>
-            </div>
-        </div>
+		<h1>NYT Search</h1>
+		<div class="form-group row">
+	  <label for="example-text-input" class="col-2 col-form-label btn" >Search Term</label>
+	  <div class="col-10">
+	    <input class="form-control" type="text"  id="searchParamater">
+	  </div>
 	</div>
 
-	<div class="row" id=searchParamater>
-	        <div class="col-md-6">
-	    		<h2>End Year</h2>
-	            <div class="custom-search-input">
-	                <div class="input-group col-md-12">
-	                    <input type="text" class="form-control input-lg" placeholder="search term" />
-	                    <span class="input-group-btn">
-	                        <button class="btn btn-info btn-lg" type="button">
-	                            <i class="glyphicon glyphicon-search"></i>
-	                        </button>
-	                    </span>
-	                </div>
-	            </div>
-	        </div>
-		</div>
+	<div class="form-group row">
+	  <label for="example-search-input" class="col-2 col-form-label btn" >Number of Records</label>
+	  <div class="col-10">
+	    <input class="form-control" type="search"  id= 'numRecords'>
+	  </div>
+	</div>
+
+	<div class="form-group row">
+	  <label for="example-email-input" class="col-2 col-form-label btn" >Start Year</label>
+	  <div class="col-10">
+	    <input class="form-control" type="search"  id='startYear'>
+	  </div>
+	</div>
+
+
+	<div class="form-group row">
+	  <label for="example-url-input" class="col-2 col-form-label btn" >End Year</label>
+	  <div class="col-10">
+	    <input class="form-control" type="search"  id="endYear">
+	  </div>
+	</div>
+	<button id=submitBtn type="submit" class="btn btn-primary">Submit</button>
+
 </div>
 
 </body>
